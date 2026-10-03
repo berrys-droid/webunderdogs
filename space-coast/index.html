@@ -21,11 +21,11 @@
 /* Underdogs house: parchment ground, ink type, oxblood signature, Playfair headlines. The proof band keeps the cellar tokens. */
 :root{
   color-scheme:light;
-  --ground:#f4ede2;      /* parchment: page ground */
-  --panel:#ebe2d3;       /* raised panels */
-  --line:#d6c8b4;
-  --ink:#1a1414;         /* primary text */
-  --ink-soft:#4a3f3f;    /* secondary text */
+  --ground:#ffffff;      /* white page ground (Penfolds) */
+  --panel:#efebe5;       /* greige panels (Kermit Lynch) */
+  --line:#dedad3;
+  --ink:#111111;         /* primary text */
+  --ink-soft:#4d4846;    /* secondary text */
   --accent:#6e0b14;      /* oxblood: the one signature colour */
   --oxblood:#6e0b14;     /* fills: wordmark, primary button */
   --oxblood-up:#520810;
@@ -222,6 +222,14 @@ footer .base{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);d
 .local p:not(.kicker){font-size:.88rem;color:var(--ink-soft)}
 @media (max-width:520px){.local{grid-template-columns:minmax(0,1fr)}}
 .note a{color:var(--accent)}
+
+/* rev: white and greige, after Kermit Lynch and Penfolds */
+header.top{background:rgba(255,255,255,.96)}
+nav.links a{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:500;color:var(--ink)}
+nav.links a:hover{color:var(--oxblood)}
+input,textarea,select{background:#ffffff}
+.who,.faq{background:var(--panel)}
+.hero img.bg,.problem .shot img{filter:saturate(.7) sepia(.12)}
 
 /* The one dark band per page: the cellar tokens, scoped */
 .proof{--ground:#120b0d;--panel:#1c1215;--line:#3a2a2e;--ink:#f4ede2;--ink-soft:#c4b4ab;--accent:#e3a0ab;background:var(--ground);color:var(--ink);color-scheme:dark}
