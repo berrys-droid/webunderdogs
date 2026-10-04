@@ -216,8 +216,10 @@ input,textarea,select{background:#ffffff}
 /* Underdogs house brand, 2026-10-03: parchment ground, ink type, oxblood the one signature colour; wordmark leads, hound is the seal */
 .logo span{font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:var(--ink)}
 .logo span b{font-weight:600;font-style:normal;color:var(--oxblood)}
-header.top .logo svg{display:none}
-footer .logo svg{width:40px;height:40px}
+.logo img.mark{display:block;width:44px;height:44px;flex:none;border-radius:50%}
+header.top .logo{gap:14px}
+header.top .logo img.mark{width:48px;height:48px}
+footer .logo img.mark{width:40px;height:40px}
 @media (max-width:420px){.logo span{font-size:.9rem;letter-spacing:.12em}}
 .hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:stretch;min-height:0;border-bottom:1px solid var(--line)}
 .hero img.bg{position:static;grid-column:2;grid-row:1;width:100%;height:100%;min-height:560px;object-fit:cover;object-position:center 40%}
@@ -251,6 +253,8 @@ header.top nav.links a[aria-current=page]{color:var(--oxblood);box-shadow:inset 
   header.top .bar{grid-template-columns:auto minmax(0,1fr) auto;padding-block:12px 8px}
   header.top .logo{justify-self:start}
   header.top .logo span{font-size:.98rem;letter-spacing:.16em}
+  header.top .logo{gap:10px}
+  header.top .logo img.mark{width:36px;height:36px}
   header.top nav.links{justify-content:center;flex-wrap:wrap;overflow:visible;gap:8px 16px;padding:0 12px 12px}
   header.top nav.links a{white-space:nowrap;letter-spacing:.1em}
 }
