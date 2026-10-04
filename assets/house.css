@@ -299,3 +299,9 @@ footer.site .base{margin-top:40px;padding-top:18px;border-top:1px solid var(--li
 .local-wrap .aside{margin-top:14px;color:var(--ink-soft);font-size:.95rem;max-width:62ch}
 
 .page-head + section.pad:not(.proof){padding-top:clamp(12px,2vw,24px)}
+
+/* Page banners, 2026-10-03: the whole graphic, uncropped, as the header of the page its homepage tile points to */
+.page-banner{margin:0;background:#111;line-height:0}
+.page-banner img{display:block;width:100%;height:auto}
+.page-banner + .page-head{padding-top:clamp(36px,5vw,64px)}
+.page-head .cta{margin-top:24px}
