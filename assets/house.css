@@ -320,3 +320,4 @@ footer.site .base{margin-top:40px;padding-top:18px;border-top:1px solid var(--li
 .proof .method-line{margin:22px 0 0;font-size:.95rem;color:var(--ink)}
 .stats p strong{display:block;color:var(--ink);font-weight:600}
 #h-proof{font-size:clamp(1.75rem,4.2vw,3.2rem);max-width:24ch;margin-inline:auto}
+.proof-notes .smallprint{font-size:.8rem;line-height:1.5;color:var(--ink-soft)}
